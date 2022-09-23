@@ -3,49 +3,59 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
-.main {
-    width: 35rem;
-    margin: auto;
-}
-
-#intro {
+/* Header Section */
+header {
     background-color: #D45113;
-    border-radius: 20px;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
-
-#intro div { padding: 0 1rem; }
-#intro img { border-radius: 10px; }
-
-h3 { font-size: 2rem; }
-
-#profile {
+header img {
     width: 100%;
     max-width: 10rem;
+    border-radius: 50%;
+    margin:1rem;
 }
 
-#courseList li {
-    padding: .3rem 1rem;
+header h3 {
+    font-size: 2rem;
+    margin:1rem;
+}
+/* =================================== */
+
+/* main section */
+main {
+    padding: 1rem;
+    color: #36383F;
 }
 
-.note {
-    margin: 0;
-    color: grey;
+main a {
+    color:#813405;
+    font-style: italic;
+    font-weight: bold;
 }
 
+main #courseList li {
+    margin: .5rem;
+}
+/* =================================== */
+
+/* Footer Section */
 footer {
     background-color: #813405;
-    padding: 2rem;
-    text-align: center;
     color: white;
-    border-radius: 10px;
-    margin: 3rem 1rem 0 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
-.updateSection span {
+footer #timestamp {
     color: #F4E76E;
 }
+/* =================================== */
+
+/* Misc */
+.singleLine {
+    white-space: nowrap;
+}
+/* =================================== */

@@ -1,0 +1,21 @@
+@media (min-width: 32.5em) {
+    body {
+        padding: 1rem;
+        max-width: 34rem;
+        margin: auto;
+    }
+    header {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        text-align: left;
+    }
+    header img {
+        border-radius: 10px;
+    }
+
+    footer {
+        border-radius: 10px;
+    }
+}
