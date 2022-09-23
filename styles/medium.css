@@ -5,7 +5,7 @@
         margin: auto;
     }
     header {
-        border-radius: 10px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         padding: 0;
@@ -16,6 +16,6 @@
     }
 
     footer {
-        border-radius: 10px;
+        border-radius: 20px;
     }
 }
