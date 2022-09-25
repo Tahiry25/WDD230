@@ -1,0 +1,68 @@
+html, body {
+    background-color: aliceblue;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #25A55F;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section .about {
+    margin: 0 0 1rem 0;
+}
+section .about h4{
+    margin: 0;
+}
+section .about a {
+    color: #346473;;
+}
+
+.section-title {
+    padding: 1rem;
+    background-color: #346473;
+    color: white;
+    text-transform: uppercase;
+}
+
+.section-content {
+    padding: 1rem;
+    color: #36383F;
+}
+
+.section-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Footer Section */
+footer {
+    background-color: #346473;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+footer #timestamp {
+    color: #E9F679;
+}
+/* =================================== */
