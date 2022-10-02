@@ -1,0 +1,105 @@
+html, body {
+    background-color: #f5f6f7;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Section */
+header {
+    background-color: #25A55F;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+header ul {
+    list-style: none;
+    background-color: #E9F679;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+header ul li:hover {
+    background-color: #346473;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #25A55F;
+}
+/* =================================== */
+
+/* main section */
+main {
+    padding: 1rem;
+    color: #36383F;
+}
+
+main .branding .container {
+    max-width: 500px;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #346473;
+}
+
+.active a {
+    color: white;
+}
+
+
+/* =================================== */
+
+.site-purpose, .branding {
+    margin: 1rem 0;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #346473;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+footer #timestamp {
+    color: #E9F679;
+}
+/* =================================== */
+
+/* Misc */
+.singleLine {
+    white-space: nowrap;
+}
+/* =================================== */
+
+#canvas-image-blending {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
