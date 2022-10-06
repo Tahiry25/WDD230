@@ -22,8 +22,16 @@ header ul {
 }
 
 header ul li {
-    padding: 1rem;
     font-weight: bold;
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+header ul li:nth-child(1) {
+    display: block;
 }
 
 header ul li:hover {
@@ -33,6 +41,10 @@ header ul li:hover {
 header ul li a {
     text-decoration: none;
     color: #25A55F;
+}
+
+header div {
+    padding: 1rem;
 }
 /* =================================== */
 
