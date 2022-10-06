@@ -1,0 +1,92 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6f7;
+}
+
+header {
+  background-color: #25A55F;
+  padding: .4rem;
+  color: #fff;
+}
+
+header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div.logo {
+  display: flex;
+  align-items: center;
+}
+header div img {
+  max-width: 4rem;
+  padding-right: .6rem;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header ul li a {
+  display: block;
+  padding: .8rem 2vw;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo h1 span:nth-child(1) {
+  font-size: 1.5rem;
+  display: block;
+}
+.logo h1 span:nth-child(2) {
+  font-size: 1rem;
+  display: block;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px!important;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.text-primary-color {
+    color: #2F4F4F;
+}
+
+#hamburgerBtn {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+}
+#hamburgerBtn p {
+  margin: 0;
+}
