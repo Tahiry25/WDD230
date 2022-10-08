@@ -27,6 +27,10 @@ header div img {
   padding-right: .6rem;
 }
 
+div.social {
+  display: block;
+}
+
 .logo h1 {
   margin: 0;
 }
@@ -41,6 +45,8 @@ header ul li a {
   padding: .8rem 2vw;
   color: #fff;
   text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
 
 .logo h1 span:nth-child(1) {
@@ -81,7 +87,7 @@ header ul li a {
 }
 
 #hamburgerBtn {
-    margin: .2rem 2vw;
+    margin: -0.4rem 2vw 0 2vw;
     background-color: transparent;
     border: none;
     font-size: 3rem;
@@ -89,4 +95,46 @@ header ul li a {
 }
 #hamburgerBtn p {
   margin: 0;
+}
+
+div.time {
+  padding: 1rem;
+  margin: 1rem 2vw;
+  background-color: #346473;
+  text-align: center;
+}
+
+main {
+  margin: .8rem .5rem;
+  padding: .4rem;
+}
+
+main section {
+  border: 1px solid #2F4F4F;
+  height: auto;
+  min-height: 16vh;
+  margin: .8rem 0;
+  padding: 0 .8rem;
+}
+
+.spotlight div{
+  border: 1px solid #2F4F4F;
+  margin: 1rem 0;
+  min-height: 16vh;
+  padding: 0 .8rem;
+}
+
+footer {
+  background-color: #346473;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+footer img {
+  max-width: 25vw;
+}
+
+.logo img {
+  width: 100%;;
 }
