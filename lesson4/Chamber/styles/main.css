@@ -103,7 +103,7 @@ header ul li a {
   background-color: rgba(0, 0, 0, .2)
 }
 
-div.time {
+div#date {
   padding: 1rem;
   margin: 1rem 2vw;
   background-color: #346473;
