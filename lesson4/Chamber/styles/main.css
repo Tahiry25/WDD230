@@ -35,9 +35,14 @@ div.social {
   margin: 0;
 }
 
+nav ul.open {
+    display: block;
+}
+
 header ul {
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 
 header ul li a {
@@ -93,8 +98,9 @@ header ul li a {
     font-size: 3rem;
     color: #fff;
 }
-#hamburgerBtn p {
-  margin: 0;
+
+#hamburgerBtn:hover {
+  background-color: rgba(0, 0, 0, .2)
 }
 
 div.time {
