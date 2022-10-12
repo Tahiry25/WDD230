@@ -8,139 +8,74 @@ body {
 
 header {
   background-color: #25A55F;
-  padding: .4rem;
   color: #fff;
+  padding: 1rem
 }
 
-header div:nth-child(1) {
+.information {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-header div.logo {
+.information div{
   display: flex;
   align-items: center;
-}
-header div img {
-  max-width: 4rem;
-  padding-right: .6rem;
-}
-
-div.social {
-  display: block;
+  justify-content: space-between;
+  max-width: 13rem;
+  margin: 0 .5rem;
 }
 
-.logo h1 {
-  margin: 0;
+.information div > img {
+  width: 100%;
 }
 
-nav ul.open {
-    display: block;
+.information img {
+  max-width: 6rem;
+  padding: 0.2rem 1rem;
 }
 
-header ul {
-  list-style-type: none;
-  padding: 0;
-  display: none;
-}
-
-header ul li a {
-  display: block;
-  padding: .8rem 2vw;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-}
-
-.logo h1 span:nth-child(1) {
-  font-size: 1.5rem;
-  display: block;
-}
-.logo h1 span:nth-child(2) {
+.information span:nth-child(2){
   font-size: 1rem;
-  display: block;
+  white-space: nowrap;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 15px!important;
-  width: 15px;
+header .date_time {
+  border: 1px solid #fff;
+  padding: 1rem;
   text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.text-primary-color {
-    color: #2F4F4F;
 }
 
 #hamburgerBtn {
-    margin: -0.4rem 2vw 0 2vw;
-    background-color: transparent;
-    border: none;
-    font-size: 3rem;
-    color: #fff;
-}
-
-#hamburgerBtn:hover {
-  background-color: rgba(0, 0, 0, .2)
-}
-
-div#date {
-  padding: 1rem;
-  margin: 1rem 2vw;
-  background-color: #346473;
-  text-align: center;
-}
-
-main {
-  margin: .8rem .5rem;
-  padding: .4rem;
-}
-
-main section {
-  border: 1px solid #2F4F4F;
+  margin: 0 1rem;
+  border: 0;
+  background-color: transparent;
   height: auto;
-  min-height: 16vh;
-  margin: .8rem 0;
-  padding: 0 .8rem;
+  cursor: pointer;
 }
 
-.spotlight div{
-  border: 1px solid #2F4F4F;
-  margin: 1rem 0;
-  min-height: 16vh;
-  padding: 0 .8rem;
+.open {
+  display: block;
 }
 
-footer {
-  background-color: #346473;
+#hamburgerBtn img {
+  width: 4rem;
+}
+
+header nav {
+  display: none;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+#primaryNav ul li {
   text-align: center;
-  padding: 1rem 0;
+}
+
+#primaryNav ul li a {
+  display: block;
+    padding: 1rem;
   color: #fff;
-}
-
-footer img {
-  max-width: 25vw;
-}
-
-.logo img {
-  width: 100%;;
+  text-decoration: none;
 }
