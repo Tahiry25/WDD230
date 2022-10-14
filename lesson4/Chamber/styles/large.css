@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 80rem) {
     #hamburgerBtn {
         display: none;
     }
@@ -9,7 +9,7 @@
 
     main {
         display: grid;
-        width: 96%;
+        width: 98%;
         column-gap: 1rem;
         row-gap: 1rem;
         grid-template-columns: repeat(4, 1fr);

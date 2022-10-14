@@ -1,4 +1,4 @@
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 50rem) {
     header nav {
         width: auto;
     }
@@ -49,5 +49,44 @@
     .weather {
         order: 7;
         width: 28%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer .logo_container {
+        flex-direction: row;
+        text-align: left;
+        width: 50%;
+    }
+
+    footer .service {
+        width: 50%;
+    }
+    footer .my_info {
+        width: 100%;
+    }
+    hr {
+        width: 100%;;
+    }
+
+    footer .logo {
+        max-width: 6rem;
+        margin: 1rem;
+    }
+
+    footer .my_info p {
+        padding: .5rem;
+    }
+
+    footer .my_info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+        justify-content: space-evenly;
     }
 }
