@@ -6,4 +6,65 @@
     #primaryNav {
         display: flex;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        justify-items: stretch;
+    }
+
+    main section {
+        margin: 0;
+        padding: 1rem;
+        height: auto;
+        order: 0;
+    }
+
+    section:nth-child(1) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3
+    }
+
+    section:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 100%;
+    }
+
+    section:nth-child(3) {
+        width: 100%;
+    }
+    section:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    section:nth-child(5) {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: end;
+        flex-direction: column!important;
+    }
+
+    .spotlight {
+        margin: 0;
+        padding: 0;
+    }
+
+    .spotlight div:nth-child(3){
+        display: block;
+    }
+    section:nth-child(6) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
 }

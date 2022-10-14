@@ -76,3 +76,36 @@ nav ul li a {
   border: 1px solid #fff;
   padding: 1rem;
 }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+  margin: 1rem;
+  border: 1px solid darkgray;
+  padding: 1rem;
+  min-height: 15rem;
+  width: 100%;
+}
+
+main .spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.spotlight div {
+  border: 1px solid darkgray;
+  height: 15rem;
+}
+
+.spotlight div:nth-child(3) {
+  display: none;
+}
+
+.join {
+  display: none;
+}
