@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,27 +24,35 @@
 </head>
 <body>
     <header>
-        <div>
-            <div class="logo">
-                <img src="./images/logo.svg" alt="logo">
-                <h1><span>Saratoga</span><span>Chamber of Commerce</span></h1>
+        <div class="logo_container">
+            <img class="logo" src="./images/logo.svg" alt="Logo">
+            <div>
+                <h1>
+                    <span>Saratoga</span><br>
+                    <span>Chamber of Commerce</span>
+                </h1>
             </div>
-            <div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-            <button id="hamburgerBtn">&#9776;</button>
         </div>
-        <div id="date">Saturday, 22 November 2022</div>
-        <nav>
-            <ul id="primaryNav">
+
+        <nav id="primaryNav">
+            <ul>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="social_container">
+            <a href="#"><img src="./images/107175_circle_facebook_icon.png" alt=""></a>
+            <a href="#"><img src="./images/107178_circle_linkedin_icon.png" alt=""></a>
+        </div>
+
+        <button id="hamburgerBtn"><img src="./images/Hamburger_icon_white.svg" alt=""></button>
     </header>
+    <div class="date_time">
+        <p id="current">test</p>
+    </div>
 
     <main>
         <section class="hero">
@@ -59,43 +68,15 @@
             <p>New Release</p>
         </section>
         <section class="spotlight">
-            <div>
-                <p>Spotlight 1</p>
-            </div>
-            <div>
-                <p>Spotlight 2</p>
-            </div>
+            <div>Spotlight 1</div>
+            <div>Spotlight 2</div>
+            <div>Spotlight 3</div>
         </section>
         <section class="join">
             <p>Join</p>
         </section>
-        <section class="event">
-            <p>Event</p>
-        </section>
-        <section class="weather">
-            <p>Weather</p>
-        </section>
     </main>
-    <footer>
-        <div class="logo">
-            <img src="./images/logo.svg" alt="logo">
-            <address>
-                <span>Saratoga Chamber of Commerce</span><br>
-                <span>service@saratogacommerce.org</span><br>
-                <span>5th Floor, A-118,</span><br>
-                <span>Sector-136, Noida,</span><br>
-                <span>Uttar Pradesh - 201305</span>
-            </address>
-            <p>(123) 123-1234</p>
-        </div>
-        <hr>
-        <div class="student_info">
-            <p>© 2022 Saratoga Chamber</p>
-            <p>Tahiry Ratsimanohatra</p>
-            <p>WDD230 Project</p>
-            <p>Last Modified: <span>10/08/2022 22:58:28</span></p>
-        </div>
-    </footer>
+    
     <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,42 +1,53 @@
-@media only screen and (min-width: 35rem) {
-    main {
-        display: grid;
-    }
-    section.spotlight {
-        display: flex;
-        flex: 1 1 100%;
-        gap: 1rem;
+@media only screen and (min-width: 820px) {
+    header nav {
+        width: auto;
     }
 
-    section.spotlight div {
+    nav ul {
+        display: flex;
+    }
+
+    header .social_container {
+        order: 4;
+    }
+
+    header #hamburgerBtn {
+        order: 5;
+    }
+
+    .hero {
+        order: 1;
+    }
+
+    .new_release {
+        order: 2;
+    }
+
+    .spotlight {
+        order: 3;
+        flex-direction: row!important;
+        justify-content: space-evenly;
+    }
+
+    .spotlight div {
         width: 100%;
+        margin: 0 .5rem;
+        padding: 1rem;
     }
 
-    footer div.student_info {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        font-size: .8rem;
-    }
-
-    footer div.logo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 1 100%;
-    }
-
-    .logo img {
-        max-width: 10rem;
-    }
-
-    .logo address {
-        text-align: left;
-    }
-
-    .logo > * {
+    .join {
         display: block;
-        width: 100%;
+        order: 4;
+    }
+
+    .event {
+        order: 6;
+        width: 55%;
+        flex-shrink: 1;
+    }
+
+    .weather {
+        order: 7;
+        width: 28%;
     }
 }
