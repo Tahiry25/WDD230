@@ -97,11 +97,16 @@ main .hero {
   background-size: cover;
 }
 
+.hero h1 {
+  color: #fff;
+  text-shadow: 2px 2px 8px #616161;
+}
+
 .weather, .new_release, .event, .spotlight, .join {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E9F679;
+  background-color: #fcfdeb;
 }
 
 main .spotlight {
@@ -114,6 +119,15 @@ main .spotlight {
   padding: 1rem;
   background-color: #346473;
   color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.spotlight div img {
+  max-width: 6rem;
+  margin: 0 auto;
 }
 
 .spotlight div:nth-child(3) {
@@ -125,11 +139,12 @@ main .spotlight {
 }
 
 .join button {
+  position: absolute;
+  top: 1rem;
   box-shadow: 0px 10px 14px -7px #3e7327;
 	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
 	background-color:#77b55a;
 	border-radius:10px;
-  width: 100%;
 	border:1px solid #4b8f29;
 	display:inline-block;
 	cursor:pointer;

@@ -36,9 +36,13 @@
     }
 
     .join {
-        display: block;
+        display: flex;
+        align-items: center;
         order: 4;
+        position: relative;
     }
+
+
 
     .event {
         order: 6;
