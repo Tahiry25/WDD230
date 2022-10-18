@@ -84,7 +84,7 @@ main {
 
 main section {
   margin: 1rem;
-  border: 1px solid darkgray;
+  /* border: 1px solid darkgray; */
   padding: 1rem;
   min-height: 15rem;
   width: 100%;
@@ -97,36 +97,23 @@ main .hero {
   background-size: cover;
 }
 
-main .event {
+.weather, .new_release, .event, .spotlight, .join {
   display: flex;
   align-items: center;
-  text-align: center;
-  padding: 1rem;
+  justify-content: center;
   background-color: #E9F679;
 }
 
-main .weather {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main .new_release {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 main .spotlight {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: stretch;
 }
 
 .spotlight div {
-  border: 1px solid darkgray;
   height: 15rem;
+  padding: 1rem;
+  background-color: #346473;
+  color: white;
 }
 
 .spotlight div:nth-child(3) {
@@ -135,6 +122,24 @@ main .spotlight {
 
 .join {
   display: none;
+}
+
+.join button {
+  box-shadow: 0px 10px 14px -7px #3e7327;
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:10px;
+  width: 100%;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1rem;
+	font-weight:bold;
+	padding:1rem 1rem;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
 }
 
 footer {
