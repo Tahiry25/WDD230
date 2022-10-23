@@ -123,6 +123,18 @@ main .hero {
   align-items: center;
   justify-content: center;
   background-color: #fcfdeb;
+  flex-direction: column;
+}
+
+.weather div {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.weather p, .weather h2 {
+  margin: .5rem;
 }
 
 main .spotlight {
