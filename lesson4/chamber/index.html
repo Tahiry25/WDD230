@@ -25,7 +25,7 @@
 <body>
     <header>
         <div class="logo_container">
-            <img class="logo" src="./images/logo.svg" alt="Logo">
+            <img class="logo" src="./images/logo.webp" alt="Logo">
             <div>
                 <h1>
                     <span>Saratoga</span><br>
@@ -56,6 +56,12 @@
 
     <main>
         <section class="hero">
+            <picture>
+                <source media="(max-width: 200px)" srcset="./images/wdd230-200.jpg">
+                <source media="(max-width: 500px)" srcset="./images/wdd230-500.jpg">
+                <source media="(max-width: 800px)" srcset="./images/wdd230-800.jpg">
+                <img src="./images/wdd230-org.jpg" alt="WDD 230">
+            </picture>
             <h1>Welcome to Saratoga Chamber of Commerce</h1>
             <button>Join The Chamber</button>
         </section>
@@ -67,34 +73,7 @@
             </div>
         </section>
         <section class="weather">
-            <!-- weather widget start -->
-            <div id="m-booked-vertical-one-prime-58454">
-                <div class="weather-customize weather-booked-vertical-one-prime" style="width:294px;">
-                    <div class="booked-vertical-prime-in">
-                        <div class="booked-vertical-prime">
-                            <div class="bwop-city">Lehi</div>
-                            <div class="bwop-icon wm01 "></div>
-                            <div class="booked-bwop-today">
-                                <div class="booked-bwop-today-temperature">
-                                    <div class="booked-wzs-bwop-val">
-                                        <div class="booked-bwop-number"><span class="plus">+</span>70</div>
-                                        <div class="booked-bwop-dergee">
-                                            <div class="booked-wzs-bwop-dergee-val">&deg;</div>
-                                            <div class="booked-wzs-bwop-dergee-name">F</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="booked-bwop-today-extreme">
-                                    <div class="booked-bwop booked-pd-h"><span>High:</span><span class="plus">+</span>72</div>
-                                    <div class="booked-bwop booked-pd-l"><span>Low:</span><span class="plus">+</span>49</div>
-                                </div>
-                            </div>
-                            <div class="bwop-state"> Sunny </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- weather widget end -->
+            <h2>Weather</h2>
         </section>
         <section class="new_release">
             <div>
