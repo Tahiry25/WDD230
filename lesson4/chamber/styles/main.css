@@ -4,6 +4,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
   background-color: #f5f6f7;
+  height: auto;
 }
 
 header {
@@ -245,19 +246,45 @@ footer .my_info p {
   width: 100%;
   max-width: 1920px;
   height: auto;
-  max-height: 800px;
-  background-color: lightblue;
   margin: 0 auto;
   position: relative;
 }
 
 .discover .hero {
   height: 100%;
-  max-height: 800px;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 1rem;
+  position: relative;
 }
 
 .discover .hero picture img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.discover .hero div {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 8px #5a5d5f;
+}
+
+.discover div {
+  position: relative;
+  display: flex;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.discover div img {
+  width: 100%;
+  max-height: 400px;
 }
