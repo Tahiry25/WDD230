@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,22 +54,27 @@
         <p id="current">test</p>
     </div>
 
-    <main class="discover">
-        <div class="hero">
+    <main>
+        <div class="hero container max-h-500 flex">
             <picture>
-                <source media="(max-width: 799px)" srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_799/v1667108744/saratoga_springs_vebqmm.jpg">
-                <source media="(max-width: 1279px)" srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1279/v1667108744/saratoga_springs_vebqmm.jpg">
-                <source media="(max-width: 1920px)" srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1920/v1667108744/saratoga_springs_vebqmm.jpg">
-                <img src="https://res.cloudinary.com/dzxzfg3rd/image/upload/v1667108744/saratoga_springs_vebqmm.jpg" alt="WDD 230">
+                <source media="(max-width: 799px)"
+                    srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_799/v1667108744/saratoga_springs_vebqmm.jpg">
+                <source media="(max-width: 1279px)"
+                    srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1279/v1667108744/saratoga_springs_vebqmm.jpg">
+                <source media="(max-width: 1920px)"
+                    srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1920/v1667108744/saratoga_springs_vebqmm.jpg">
+                <img class="fit-img" src="https://res.cloudinary.com/dzxzfg3rd/image/upload/v1667108744/saratoga_springs_vebqmm.jpg" alt="WDD 230">
             </picture>
-            <div>Saratoga Springs, UT</div>
+            <h1>SARATOGA SPRINGS, UT</h1>
         </div>
 
-        <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Pleasant_Grove%2C_UT_-_Looking_West_over_Utah_Lake.jpg" alt="">
+        <div class="container flex flex-space-between">
+            <img class="fit-img" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Pleasant_Grove%2C_UT_-_Looking_West_over_Utah_Lake.jpg"
+                alt="">
             <p>Known as Utah’s largest freshwater lake at roughly 148 sq. miles, Utah Lake provides a variety of recreation
                 activities.
-                Utah Lake State Park offers fishing access for channel catfish, walleye, white bass, black bass, and several species
+                Utah Lake State Park offers fishing access for channel catfish, walleye, white bass, black bass, and several
+                species
                 of
                 panfish. With an average water temperature of 75 degrees, Utah Lake provides an excellent outlet for swimming,
                 boating,
