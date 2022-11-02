@@ -7,7 +7,7 @@
         display: flex;
     }
 
-    main {
+    .home {
         display: grid;
         width: 98%;
         column-gap: 1rem;
@@ -17,7 +17,7 @@
         margin: 1rem auto;
     }
 
-    main section {
+    .home section {
         margin: 0;
         width: auto;
     }
