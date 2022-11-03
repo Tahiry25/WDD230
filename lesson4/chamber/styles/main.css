@@ -252,6 +252,12 @@ footer .my_info p {
   margin: auto;
 }
 
+.container-sm {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+}
+
 .max-h-500 {
   height: 100%;
   max-height: 500px;
@@ -261,16 +267,50 @@ footer .my_info p {
 .flex {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
 }
 
 .flex-space-between {
   flex-wrap: wrap;
 }
 
+.space-between {
+  justify-content: space-evenly;
+}
+
+.item-1 {
+  width: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .fit-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.fit-img:hover {
+  border-radius: 1rem;
+  filter: none;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
 }
 
 /* Custom */
@@ -282,4 +322,9 @@ footer .my_info p {
   color: #fff;
   text-shadow: rgb(100, 106, 110) 1px 0 10px;
   font-size: 3rem;
+}
+
+.min-h-300 {
+  height: 100%;
+  min-height: 300px;
 }
