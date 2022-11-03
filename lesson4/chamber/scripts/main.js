@@ -10,11 +10,11 @@ let date = new Date().toUTCString();
 document.getElementById("current").innerHTML = date;
 
 // Lazy loading
-const images = document.querySelectorAll("[src]");
+const images = document.querySelectorAll("[data-src]");
 console.log(images);
 
 function preloadImage(img) {
-  const src = img.getAttribute("src");
+  const src = img.getAttribute("data-src");
   if (!src) {
     return;
   }
@@ -23,8 +23,8 @@ function preloadImage(img) {
 }
 
 const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 100px 0px",
+  threshold: 1,
+  rootMargin: "0px 0px -500px 0px",
 };
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   entries.forEach((entry) => {
