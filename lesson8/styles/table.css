@@ -59,6 +59,14 @@ caption {
   font-weight: bold;
 }
 
+tbody tr td:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+tbody tr td:nth-child(2) p {
+  margin: 0;
+}
+
 tbody tr:hover {
     background-color: #466d3c;
     position: relative ;
