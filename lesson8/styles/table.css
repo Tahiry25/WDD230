@@ -28,6 +28,13 @@ tr:nth-child(even) {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 400px;
   margin: auto;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
 }
