@@ -109,8 +109,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .sm-hide {
-        display: block;
+    .join_container {
+        flex-direction: row;
     }
 
     /* custom targets */

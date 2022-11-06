@@ -270,10 +270,6 @@ footer .my_info p {
   /* justify-content: center; */
 }
 
-.sm-hide {
-  display: none;
-}
-
 .grid {
   display: grid;
   gap: 1rem;
@@ -363,22 +359,33 @@ footer .my_info p {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
-}
-
-.join_container div:nth-child(1) {
-  padding: 2rem;
-}
-
-.join_container div:nth-child(2) {
-  background-color: #25A55F;
-  text-align: center;
-  /* padding: 2rem; */
-  min-height: 40rem;
+  margin: auto;
+  flex-direction: column;
 }
 
 .input_container div {
   border-radius: .5rem;
   padding: .5rem;
   border: 1px solid lightgray;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+}
+
+.input {
+  margin: 2rem auto;
+  max-width: 300px;
+}
+.input input {
+  display: block;
+  width: 100%;
+}
+
+.membership_grid {
+  border: none!important;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: stretch!important;
+  justify-content: stretch;
+}
+
+.membership_grid div {
 }
