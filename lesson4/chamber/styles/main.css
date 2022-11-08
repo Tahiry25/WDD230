@@ -415,3 +415,13 @@ footer .my_info p {
   width: 10%;
   min-width: 100px;
 }
+
+.thank_you a {
+  padding: 1rem;
+  border: 1px solid #fff;
+  max-width: 150px;
+  margin: 1rem auto;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1rem;
+}
