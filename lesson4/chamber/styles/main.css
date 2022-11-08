@@ -385,7 +385,9 @@ footer .my_info p {
   grid-template-columns: 1fr 1fr ;
   align-items: stretch!important;
   justify-content: stretch;
+  gap: 1rem;
 }
 
 .membership_grid div {
+  width: 90%;
 }
