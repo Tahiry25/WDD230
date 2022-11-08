@@ -266,7 +266,7 @@ footer .my_info p {
 
 .flex {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
 }
 
@@ -381,13 +381,37 @@ footer .my_info p {
 
 .membership_grid {
   border: none!important;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  align-items: stretch!important;
-  justify-content: stretch;
   gap: 1rem;
+  background-color: #ebebeb;
 }
 
 .membership_grid div {
   width: 90%;
+  margin: 1rem auto;
+}
+
+.option_title {
+  justify-content: space-between;
+}
+
+.thank_you {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.thank_you > div {
+  background-color: #346473;
+  min-height: 500px;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.thank_you img {
+  width: 10%;
+  min-width: 100px;
 }

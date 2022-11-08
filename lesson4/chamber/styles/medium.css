@@ -114,4 +114,12 @@
     }
 
     /* custom targets */
+    .membership_grid {
+        border: none!important;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: stretch!important;
+        justify-content: stretch;
+        gap: 1rem;
+    }
 }

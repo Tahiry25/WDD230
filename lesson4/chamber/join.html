@@ -53,7 +53,7 @@
         <button id="hamburgerBtn"><img src="./images/Hamburger_icon_white.svg" alt=""></button>
     </header>
 
-    <form action="/thankyou.html">
+    <form action="/lesson4/chamber/thankyou.html">
         <main class="join_container flex space-between">
             <!-- section 1 -->
             <div class="w-full">
@@ -89,6 +89,11 @@
                         <input class="w-full input_style" type="text" id="company" name="company"
                             placeholder="Way Finder Inc.">
                     </div>
+
+                    <label for="description">Business Description:</label>
+                    <div>
+                        <textarea class="w-full input_style" type="text" id="description" name="description" placeholder="Type description ..."></textarea>
+                    </div>
                 </div>
             </div>
 
@@ -106,13 +111,14 @@
                     </div>
                     <div class="membership_grid">
                         <div>
-                            <h3>NP Membership</h3>
+                            <h3 class="flex option_title"><span>NP Membership</span><span>$0</span></h3>
                             <ul>
                                 <li>Free admission to most SP Chamber Events</li>
                             </ul>
                         </div>
                         <div>
-                            <h3>Bronze Membership</h3>
+                            <h3 class="flex option_title"><span>Bronze Membership</span><span>$75</span></h3>
+
                             <ul>
                                 <li>Everything in NP Membership</li>
                                 <li>Listing in online membership directory</li>
@@ -120,7 +126,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h3>Silver Membership</h3>
+                            <h3 class="flex option_title"><span>Silver Membership</span><span>$140</span></h3>
                             <ul>
                                 <li>Everything in Bronze Membership</li>
                                 <li>Letters of introduction to members of your choice</li>
@@ -128,7 +134,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h4>Gold Membership</h4>
+                            <h3 class="flex option_title"><span>Gold Membership</span><span>$200</span></h3>
                             <ul>
                                 <li>Everything in Silver Membership</li>
                                 <li>Exclusive invitations to Top Investor, C-suite events</li>
@@ -140,7 +146,7 @@
             </div>
         </main>
         <div class="input">
-            <input class="btn" type="submit" value="Submit">
+            <input class="btn" type="submit" value="Subscribe to Chamber">
         </div>
     </form>
 
