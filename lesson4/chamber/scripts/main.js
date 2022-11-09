@@ -72,6 +72,23 @@ if (path.includes('discover')) {
   document.getElementById("visit_count").textContent = difference;
 }
 
+
+// Join page
+
+function changeState() {
+  let choice = document.querySelector("select#mlevel").value;
+  console.log(choice + "_pkg");
+  document.querySelectorAll(".membership_grid > *")[0].style.backgroundColor =
+  document.querySelectorAll(".membership_grid > *")[1].style.backgroundColor =
+  document.querySelectorAll(".membership_grid > *")[2].style.backgroundColor =
+  document.querySelectorAll(".membership_grid > *")[3].style.backgroundColor =
+    "transparent";
+  
+  document.querySelector(`#${choice}_pkg`).style.backgroundColor = "#25A55F";
+}
+
 if (path.includes('join')) {
   document.querySelector('input#date').value = new Date()
+  const selectElmnt = document.querySelector('select#mlevel')
+  selectElmnt.onchange = changeState;
 }

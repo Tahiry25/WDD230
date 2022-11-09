@@ -127,6 +127,7 @@
                     <label for="mlevel">Membership Level:
                     <div>
                         <select class="w-full input_style" name="mlevel" id="mlevel">
+                            <option value="" default>--</option>
                             <option value="np">NP Membership | $0/Month</option>
                             <option value="bronze">Bronze Membership | $75/Month</option>
                             <option value="silver">Silver Membership | $140 / Month</option>
@@ -135,13 +136,13 @@
                     </div>
                     </label>
                     <div class="membership_grid">
-                        <div>
+                        <div id="np_pkg">
                             <h3 class="flex option_title"><span>NP Membership</span><span>$0</span></h3>
                             <ul>
                                 <li>Free admission to most SP Chamber Events</li>
                             </ul>
                         </div>
-                        <div>
+                        <div id="bronze_pkg">
                             <h3 class="flex option_title"><span>Bronze Membership</span><span>$75</span></h3>
 
                             <ul>
@@ -150,7 +151,7 @@
                                 <li>Free one-on-one business coaching, low cost workshops and small business loans</li>
                             </ul>
                         </div>
-                        <div>
+                        <div id="silver_pkg">
                             <h3 class="flex option_title"><span>Silver Membership</span><span>$140</span></h3>
                             <ul>
                                 <li>Everything in Bronze Membership</li>
@@ -158,7 +159,7 @@
                                 <li>Marketing support to grow your brand</li>
                             </ul>
                         </div>
-                        <div>
+                        <div id="gold_pkg">
                             <h3 class="flex option_title"><span>Gold Membership</span><span>$200</span></h3>
                             <ul>
                                 <li>Everything in Silver Membership</li>

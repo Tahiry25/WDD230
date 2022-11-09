@@ -389,6 +389,7 @@ footer .my_info p {
 .membership_grid div {
   width: 90%;
   margin: 1rem auto;
+  transition: 500ms;
 }
 
 .option_title {
