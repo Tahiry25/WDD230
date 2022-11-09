@@ -1,3 +1,5 @@
+let path = window.location.pathname
+
 function toggleMenu() {
   // alert('test');
   document.getElementById("primaryNav").classList.toggle("open");
@@ -7,7 +9,9 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 let date = new Date().toUTCString();
-document.getElementById("current").innerHTML = date;
+if (path.includes('discover')) {
+  document.getElementById("current").innerHTML = date;
+}
 
 // Lazy loading
 const images = document.querySelectorAll("[data-src]");
@@ -64,4 +68,10 @@ function dateDiffInDays(a, b) {
 
 difference = dateDiffInDays(new Date(visited), today);
 
-document.getElementById("visit_count").textContent = difference;
+if (path.includes('discover')) {
+  document.getElementById("visit_count").textContent = difference;
+}
+
+if (path.includes('join')) {
+  document.querySelector('input#date').value = new Date()
+}

@@ -377,12 +377,13 @@ footer .my_info p {
 .input input {
   display: block;
   width: 100%;
+  background-color: #346473;
 }
 
 .membership_grid {
   border: none!important;
   gap: 1rem;
-  background-color: #ebebeb;
+  background-color: #34647322;
 }
 
 .membership_grid div {
@@ -424,4 +425,13 @@ footer .my_info p {
   color: #fff;
   text-decoration: none;
   border-radius: 1rem;
+}
+
+.join_banner {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.join_banner img {
+  width: 100%;
 }

@@ -53,6 +53,19 @@
         <button id="hamburgerBtn"><img src="./images/Hamburger_icon_white.svg" alt=""></button>
     </header>
 
+    <div class="join_banner">
+        <picture>
+            <source media="(max-width: 799px)"
+                srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_799/v1667108744/workspace-gc1fd4bbde_1920_mdbmko.jpg">
+            <source media="(max-width: 1279px)"
+                srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1279/v1667108744/workspace-gc1fd4bbde_1920_mdbmko.jpg">
+            <source media="(max-width: 1920px)"
+                srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_1920/v1667108744/workspace-gc1fd4bbde_1920_mdbmko.jpg">
+            <img src="https://res.cloudinary.com/dzxzfg3rd/image/upload/q_auto/v1667976122/workspace-gc1fd4bbde_1920_mdbmko.jpg"
+                alt="Saratoga Springs Fat Cats">
+        </picture>
+    </div>
+
     <form action="/lesson4/chamber/thankyou.html">
         <main class="join_container flex space-between">
             <!-- section 1 -->
@@ -70,7 +83,8 @@
                     <label for="title">Title:</label><br>
                     <div>
                         <input class="w-full input_style" type="text" id="title" name="title"
-                            placeholder="Web Developer">
+                            placeholder="Web Developer"
+                            pattern="^[\w\s-]{7,}$">
                     </div>
 
                     <label for="email">Email:</label><br>
@@ -100,6 +114,7 @@
             <!-- section 2 -->
             <div class="w-full sm-hide">
                 <div class="input_container p-2">
+                    <input class="w-full input_style" type="hidden" id="date" name="date" value="">
                     <label for="mlevel">Membership Level:</label><br>
                     <div>
                         <select class="w-full input_style" name="mlevel" id="mlevel">

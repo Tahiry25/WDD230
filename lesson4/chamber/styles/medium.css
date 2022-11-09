@@ -111,6 +111,7 @@
 
     .join_container {
         flex-direction: row;
+        max-width: 1200px;
     }
 
     /* custom targets */
