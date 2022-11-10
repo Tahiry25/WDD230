@@ -5,11 +5,13 @@ const cards = document.querySelector(".cards");
 
 fetch(requestURL)
   .then((res) => res.json())
-  .then((data) => { sessionStorage.setItem('prophets', JSON.stringify(data)) })
-  
-const prophets = JSON.parse(sessionStorage.prophets)['prophets']
+  .then((data) => {
+    localStorage.setItem('prophets', JSON.stringify(data))
+  })
+
 
 function addProphets() {
+  const prophets = JSON.parse(localStorage.prophets)["prophets"];
   prophets.forEach((prophet) => {
     let node = document.createElement("div");
 
