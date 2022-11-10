@@ -1,0 +1,47 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6f7;
+}
+
+header {
+  text-align: center;
+  color: rgb(40, 92, 156);
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(40, 92, 156);
+  color: #fff;
+  margin-top: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+main .cards {
+  border: 1px solid rgb(40, 92, 156);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.cards > div {
+  padding: 1rem;
+  background-color: rgba(40, 92, 156, 0.24);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cards div > img {
+  
+}
