@@ -25,23 +25,28 @@ main {
 }
 
 main .cards {
-  border: 1px solid rgb(40, 92, 156);
+  background-color:rgba(40, 92, 156, 0.05);
   border-radius: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: .5rem;
   overflow: hidden;
-  padding: 1rem;
+  padding: .5rem;
   max-width: 1200px;
 }
 
 .cards > div {
-  padding: 1rem;
+  padding: .5rem;
   background-color: rgba(40, 92, 156, 0.24);
-  border-radius: 1rem;
+  border-radius: .5rem;
   text-align: center;
 }
 
 .cards div > img {
-  
+  width: 100%;
+  max-width: 12rem;
+  border-radius: .5rem;
+  box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
+  -webkit-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
+  -moz-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
 }
