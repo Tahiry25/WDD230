@@ -51,13 +51,3 @@ main .cards {
   -webkit-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
   -moz-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
 }
-
-.cards div > img:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;
-  transition: 400ms;
-}

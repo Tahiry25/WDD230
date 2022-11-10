@@ -1,6 +1,15 @@
 @media screen and (min-width: 700px) {
-    main .cards {
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-    }
+  main .cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+  .cards div > img:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    transition: 400ms;
+  }
 }
