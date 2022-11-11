@@ -123,4 +123,8 @@
         justify-content: stretch;
         gap: 1rem;
     }
+
+    .join_banner h1 {
+        top: 15rem;
+    }
 }

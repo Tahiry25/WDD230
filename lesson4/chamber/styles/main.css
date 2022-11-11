@@ -379,6 +379,7 @@ footer .my_info p {
 
 /* Join page */
 .join_container {
+  position: relative;
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
@@ -458,8 +459,19 @@ footer .my_info p {
 .join_banner {
   max-height: 400px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .join_banner img {
   width: 100%;
+}
+
+.join_banner h1 {
+  position: absolute;
+  top: 13rem;
+  font-size: 3rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
