@@ -54,12 +54,9 @@
 
         <button id="hamburgerBtn"><img src="./images/Hamburger_icon_white.svg" alt=""></button>
     </header>
-    <div class="date_time">
-        <p id="current">test</p>
-    </div>
 
-    <main>
-        <div class="hero container max-h-500 flex">
+    <main class="discover">
+        <div class="hero max-h-500 flex">
             <picture>
                 <source media="(max-width: 799px)"
                     srcset="https://res.cloudinary.com/dzxzfg3rd/image/upload/c_scale,q_auto,w_799/v1667108744/saratoga_springs_vebqmm.jpg">
@@ -71,11 +68,7 @@
             </picture>
             <h1>SARATOGA SPRINGS, UT</h1>
         </div>
-        <div class="stats container flex">
-            <div class="w-full">
-                <p>Last visit: <span id="visit_count">2</span> days ago.</p>
-            </div>
-        </div>
+        
         <div class="p-2">
             <div class="item-1 container-sm grid m-1">
                 <div class="flex min-h-300">
@@ -174,6 +167,10 @@
         </div>
     </main>
 
+    <div class="stats flex justify-between white">
+        <p class="px-1" id="current">test</p>
+        <p class="px-1">Last visit: <span id="visit_count">2</span> days ago.</p>
+    </div>
     <footer>
         <div class="logo_container">
             <img class="logo" src="./images/logo.svg" alt="Logo">

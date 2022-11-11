@@ -9,9 +9,7 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 let date = new Date().toUTCString();
-if (path.includes('discover')) {
-  document.getElementById("current").innerHTML = date;
-}
+document.getElementById("current").innerHTML = date;
 
 // Lazy loading
 const images = document.querySelectorAll("[data-src]");
@@ -68,9 +66,7 @@ function dateDiffInDays(a, b) {
 
 difference = dateDiffInDays(new Date(visited), today);
 
-if (path.includes('discover')) {
-  document.getElementById("visit_count").textContent = difference;
-}
+document.getElementById("visit_count").textContent = difference;
 
 
 // Join page
