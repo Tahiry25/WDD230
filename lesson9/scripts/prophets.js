@@ -8,34 +8,35 @@ fetch(requestURL)
   .then((data) => {
     const prophets = data['prophets']
     return prophets
-  }).then((prophets) => {
-    prophets.forEach((prophet) => {
-      let node = document.createElement("div");
+  }).then((prophets) => addProphet(prophets))
 
-      // name
-      let name = document.createElement("h2");
-      name.textContent = prophet["name"] + " " + prophet["lastname"];
-      node.appendChild(name);
+function addProphet(array) {
+  array.forEach((prophet) => {
+    let node = document.createElement("div");
 
-      // Date of Birth
-      let dob = document.createElement("p");
-      dob.textContent = "Date of Birth: " + prophet["birthdate"];
-      node.appendChild(dob);
+    // name
+    let name = document.createElement("h2");
+    name.textContent = prophet["name"] + " " + prophet["lastname"];
+    node.appendChild(name);
 
-      // Place of Birth
-      let pob = document.createElement("p");
-      pob.textContent = "Place of Birth: " + prophet["birthplace"];
-      node.appendChild(pob);
+    // Date of Birth
+    let dob = document.createElement("p");
+    dob.textContent = "Date of Birth: " + prophet["birthdate"];
+    node.appendChild(dob);
 
-      // Profile image
-      let image = document.createElement("img");
-      image.setAttribute("src", prophet["imageurl"]);
-      image.setAttribute(
-        "alt",
-        `${prophet["name"]} ${prophet["lastname"]}'s picture`
-      );
-      node.appendChild(image);
+    // Place of Birth
+    let pob = document.createElement("p");
+    pob.textContent = "Place of Birth: " + prophet["birthplace"];
+    node.appendChild(pob);
 
-      cards.appendChild(node);
-    });
-  })
+    // Profile image
+    let image = document.createElement("img");
+    image.setAttribute("src", prophet["imageurl"]);
+    image.setAttribute(
+      "alt",
+      `${prophet["name"]} ${prophet["lastname"]}'s picture`
+    );
+    node.appendChild(image);
+    cards.appendChild(node);
+  });
+}
