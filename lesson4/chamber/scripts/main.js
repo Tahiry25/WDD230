@@ -88,3 +88,49 @@ if (path.includes('join')) {
   const selectElmnt = document.querySelector('select#mlevel')
   selectElmnt.onchange = changeState;
 }
+
+// Directory page 
+const requestURL =
+  "../chamber/json/directory.json";
+
+const cards = document.querySelector(".directory .cards");
+
+fetch(requestURL)
+  .then((res) => res.json())
+  .then((data) => {
+    const list = data;
+    return list;
+  })
+  .then((list) => addProphet(list));
+
+function addProphet(array) {
+  array.forEach((list) => {
+    let node = document.createElement("div");
+
+    // name
+    let name = document.createElement("h2");
+    name.textContent = list["name"];
+    node.appendChild(name);
+
+    // Profile image
+    let image = document.createElement("img");
+    image.setAttribute("src", list["logo"]);
+    image.setAttribute(
+      "alt",
+      `${list["name"]}'s logo`
+    );
+    node.appendChild(image);
+
+    // Phone Number
+    let number = document.createElement("p");
+    number.textContent = "Phone: " + list["phone"];
+    node.appendChild(number);
+
+    // Address
+    let address = document.createElement("p");
+    address.textContent = list["address"];
+    node.appendChild(address);
+
+    cards.appendChild(node);
+  });
+}

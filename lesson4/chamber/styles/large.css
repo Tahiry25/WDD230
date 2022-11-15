@@ -76,5 +76,11 @@
     section:nth-child(6) {
         grid-column-start: 1;
         grid-row-start: 3;
-    } */
+    }
+
+    /* Directory */
+    .directory .cards {
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+    }
 }

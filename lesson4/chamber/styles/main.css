@@ -299,6 +299,10 @@ footer .my_info p {
   justify-content: space-evenly;
 }
 
+.space-center {
+  justify-content: center;
+}
+
 .px-1 {
   padding: 0 1rem;
 }
@@ -474,4 +478,45 @@ footer .my_info p {
   color: #fff;
   width: 100%;
   text-align: center;
+}
+
+/* Directory */
+.display {
+  gap: 2rem;
+  margin: 1rem;
+}
+.display div {
+  width: 50px;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: #3464731f;
+}
+
+.directory .cards {
+  background-color:#25a55f1a;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .5rem;
+  overflow: hidden;
+  padding: .5rem;
+  max-width: 1200px;
+  margin: 0 auto 1rem auto
+}
+
+.directory .cards > div {
+  position: relative;
+  padding: .5rem;
+  background-color: #25a55f3c;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.directory .cards div > img {
+  width: 100%;
+  max-width: 12rem;
+  border-radius: .5rem;
+  box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
+  -webkit-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
+  -moz-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
 }

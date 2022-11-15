@@ -127,4 +127,10 @@
     .join_banner h1 {
         top: 15rem;
     }
+
+    /* Directory */
+     .directory .cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
 }

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Bona Vita Italian Bistro",
+        "phone": "(801) 901-1955",
+        "address": "1820 W Traverse Parkway Suite C, Lehi, Ut 84043",
+        "logo": "https://www.chamberorganizer.com/lehi/photos/MP8037731910214119P.JPG"
+    },
+    {
+        "name": "Costco",
+        "phone": "(801) 407-4211",
+        "address": "1083 N Redwood Road Saratoga Springs, UT 84045",
+        "logo": "https://docuteam.b-cdn.net/img.php?store=21430&type=logo"
+    },
+    {
+        "name": "Oakwood Homes/Wander",
+        "phone": "(210) 385-7252",
+        "address": "400 S. & Riverside Dr. Saratoga Springs, UT 84043",
+        "logo": "https://www.chamberorganizer.com/lehi/photos/MP7903481909263339P.JPG"
+    },
+    {
+        "name": "Curves-Jenny Craig",
+        "phone": "(801) 426-5910",
+        "address": "555 S State St. #201 Orem, UT 84058",
+        "logo": "https://docuteam.b-cdn.net/img.php?store=22397&type=logo"
+    }
+]
