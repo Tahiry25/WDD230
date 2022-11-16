@@ -131,6 +131,6 @@
     /* Directory */
      .directory .cards {
         grid-template-columns: repeat(2, 1fr);
-        margin: auto;
+        margin: 1rem auto;
     }
 }

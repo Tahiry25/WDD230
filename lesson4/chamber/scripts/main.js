@@ -169,7 +169,7 @@ function addList(array) {
 
     // Address
     let address = document.createElement("p");
-    address.textContent = list["address"];
+    address.textContent = `Address ${list["address"]}`;
     nodeChild.appendChild(address);
 
     node.appendChild(nodeChild)
