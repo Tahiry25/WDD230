@@ -102,9 +102,7 @@ fetch(requestURL)
     return list;
   })
   .then((list) => {
-    if (!localStorage.list) {
-      localStorage.setItem('list', JSON.stringify(list))
-    }
+    localStorage.setItem("list", JSON.stringify(list));
     addTiles(list);
   });
 

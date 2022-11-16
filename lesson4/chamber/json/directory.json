@@ -22,5 +22,29 @@
         "phone": "(801) 426-5910",
         "address": "555 S State St. #201 Orem, UT 84058",
         "logo": "https://docuteam.b-cdn.net/img.php?store=22397&type=logo"
+    },
+    {
+        "name": "Quick Quack Car Wash",
+        "phone": "(219) 455-5618",
+        "address": "1362 E 3500 North Lehi, UT 84043",
+        "logo": "https://www.chamberorganizer.com/lehi/photos/MP10239322209223036P.JPG"
+    },
+    {
+        "name": "Timp Rental - Saratoga Springs",
+        "phone": "(801) 331-7000",
+        "address": "2196 N Redwood Road Saratoga Springs, UT 84045",
+        "logo": "https://docuteam.b-cdn.net/img.php?store=80300&type=logo"
+    },
+    {
+        "name": "EDGEhomes",
+        "phone": "(801) 494-0150",
+        "address": "13702 S. 200 West Draper, UT 84020",
+        "logo": "https://www.chamberorganizer.com/lehi/photos/MP3924581404292146P.JPG"
+    },
+    {
+        "name": "Utah Truck Country",
+        "phone": "(801) 653-1290",
+        "address": "966 W State St Lehi, UT 84043",
+        "logo": "https://www.chamberorganizer.com/lehi/photos/MP10147732207153425P.JPG"
     }
 ]
