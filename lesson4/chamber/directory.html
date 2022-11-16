@@ -55,10 +55,12 @@
         <button id="hamburgerBtn"><img src="./images/Hamburger_icon_white.svg" alt=""></button>
     </header>
     <div class="display flex space-center">
-        <div><img class="w-full" src="./images/grid.svg" alt="" srcset=""></div>
-        <div><img class="w-full" src="./images/list.svg" alt="" srcset=""></div>
+        <div id="grid-btn" onclick="tiles(JSON.parse(localStorage.list))"><img class="w-full" src="./images/grid.svg" alt="" srcset=""></div>
+        <div id="list-btn" onclick="list(JSON.parse(localStorage.list))"><img class="w-full" src="./images/list.svg" alt="" srcset=""></div>
     </div>
-    <main class="cards"></main>
+    <main>
+        <!-- This section is populated via Javascript -->
+    </main>
     <div class="stats flex justify-between white">
         <p class="px-1" id="current">test</p>
         <p class="px-1">Last visit: <span id="visit_count">2</span> days ago.</p>

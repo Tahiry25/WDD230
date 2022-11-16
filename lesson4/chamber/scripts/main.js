@@ -93,7 +93,7 @@ if (path.includes('join')) {
 const requestURL =
   "../chamber/json/directory.json";
 
-const cards = document.querySelector(".directory .cards");
+
 
 fetch(requestURL)
   .then((res) => res.json())
@@ -101,9 +101,17 @@ fetch(requestURL)
     const list = data;
     return list;
   })
-  .then((list) => addProphet(list));
+  .then((list) => {
+    if (!localStorage.list) {
+      localStorage.setItem('list', JSON.stringify(list))
+    }
+    addTiles(list);
+  });
 
-function addProphet(array) {
+function addTiles(array) {
+  const main = document.querySelector(".directory main");
+  main.classList.add('cards');
+  const cards = document.querySelector(".directory .cards");
   array.forEach((list) => {
     let node = document.createElement("div");
 
@@ -133,4 +141,53 @@ function addProphet(array) {
 
     cards.appendChild(node);
   });
+}
+
+function addList(array) {
+  const main = document.querySelector(".directory main");
+  main.classList.add("list");
+
+  array.forEach((list) => {
+    let node = document.createElement("div");
+    let nodeChild = document.createElement('div')
+    // image
+    let image = document.createElement("img");
+    image.setAttribute("src", list["logo"]);
+    image.setAttribute("alt", `${list["name"]}'s logo`);
+    image.setAttribute("width", "150");
+    node.appendChild(image);
+
+    // name
+    let name = document.createElement("h2");
+    name.textContent = list["name"];
+    nodeChild.appendChild(name);
+
+    // Phone Number
+    let number = document.createElement("p");
+    number.textContent = "Phone: " + list["phone"];
+    nodeChild.appendChild(number);
+
+    // Address
+    let address = document.createElement("p");
+    address.textContent = list["address"];
+    nodeChild.appendChild(address);
+
+    node.appendChild(nodeChild)
+
+    main.appendChild(node);
+  })
+}
+
+function tiles(array) {
+  let elmt = document.querySelector(".directory main");
+  elmt.classList.remove("list");
+  elmt.innerHTML = "";
+  addTiles(array)
+}
+
+function list(array) {
+  let elmt = document.querySelector(".directory main");
+  elmt.classList.remove('cards')
+  elmt.innerHTML = "";
+  addList(array);
 }

@@ -520,3 +520,18 @@ footer .my_info p {
   -webkit-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
   -moz-box-shadow: 1px 10px 17px -11px rgba(105,105,105,0.75);
 }
+
+.directory .list > div {
+  display: flex;
+  align-items: center;
+  background-color: #25a55f3c;
+  padding: 1rem;
+  max-width: 800px;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  gap: 2rem;
+}
+
+.directory img {
+  border-radius: 1rem;
+}
