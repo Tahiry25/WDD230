@@ -5,7 +5,7 @@ const captionDesc = document.querySelector("figcaption");
 
 
 const url =
-    "https://api.openweathermap.org/data/2.5/weather?zip=84045,us&appid=6253bdd6164eff3db994458b35c2dbe4";
+    "https://api.openweathermap.org/data/2.5/weather?zip=84045,us&appid=6253bdd6164eff3db994458b35c2dbe4&units=imperial";
 
 async function apiFetch() {
   try {
@@ -14,6 +14,10 @@ async function apiFetch() {
       const data = await response.json();
       console.log(data); // this is for testing the call
       currentTemp.textContent = data['main']['temp']
+      weatherIcon.setAttribute(
+        "src",
+        `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`
+      );
     } else {
       throw Error(await response.text());
     }
