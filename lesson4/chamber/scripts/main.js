@@ -79,7 +79,7 @@ function changeState() {
   document.querySelectorAll(".membership_grid > *")[2].style.backgroundColor =
   document.querySelectorAll(".membership_grid > *")[3].style.backgroundColor =
     "transparent";
-  
+
   document.querySelector(`#${choice}_pkg`).style.backgroundColor = "#25A55F";
 }
 
@@ -89,7 +89,7 @@ if (path.includes('join')) {
   selectElmnt.onchange = changeState;
 }
 
-// Directory page 
+// Directory page
 const requestURL =
   "../chamber/json/directory.json";
 
@@ -189,3 +189,7 @@ function list(array) {
   elmt.innerHTML = "";
   addList(array);
 }
+
+
+
+https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=6253bdd6164eff3db994458b35c2dbe4
