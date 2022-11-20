@@ -93,8 +93,6 @@ if (path.includes('join')) {
 const requestURL =
   "../chamber/json/directory.json";
 
-
-
 fetch(requestURL)
   .then((res) => res.json())
   .then((data) => {
@@ -103,7 +101,9 @@ fetch(requestURL)
   })
   .then((list) => {
     localStorage.setItem("list", JSON.stringify(list));
-    addTiles(list);
+    if (path.includes('directory')) {
+      addTiles(list);
+    }
   });
 
 function addTiles(array) {
@@ -190,6 +190,54 @@ function list(array) {
   addList(array);
 }
 
+// Weather
 
+const url =
+  "https://api.openweathermap.org/data/2.5/weather?zip=84045,us&appid=6253bdd6164eff3db994458b35c2dbe4&units=imperial";
 
-https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=6253bdd6164eff3db994458b35c2dbe4
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      injectWeather(data)
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+apiFetch();
+
+function injectWeather(data) {
+  if (path.endsWith("chamber/")) {
+    const icon = document.querySelector(".weather > div > img");
+    const temp = document.querySelector(".weather > div > p");
+    const condition = document.querySelector(".weather #condition");
+    const windSpeed = document.querySelector('.weather #wind-speed >span')
+    const windChill = document.querySelector('.weather #wind-chill > span')
+    icon.setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`
+    );
+
+    // console.log(windChill(data["wind"]["speed"], data["main"]["temp"]));
+
+    temp.textContent = `${Math.round(data["main"]["temp"], 1)}° F`;
+    condition.textContent = data["weather"][0]["description"];
+    windSpeed.textContent = Math.round(data["wind"]["speed"], 1);
+    windChill.textContent = Math.round(
+      windChillCalculator(data["wind"]["speed"], data["main"]["temp"]),
+      1
+    );
+  }
+}
+
+// calculate windchill
+
+function windChillCalculator(speed, temp) {
+  const windChill = temp - (speed * 0.7)
+  return windChill
+}

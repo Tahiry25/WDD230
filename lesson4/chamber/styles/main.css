@@ -92,6 +92,12 @@ nav ul li a {
   max-height: 40rem;
 }
 
+#credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .home .hero {
   position: relative;
   background-image: url(https://picsum.photos/seed/picsum/1000/500);
@@ -120,6 +126,7 @@ nav ul li a {
 }
 
 .weather, .new_release, .event, .spotlight, .join {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
