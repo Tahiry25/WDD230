@@ -220,7 +220,7 @@ function injectWeather(data) {
     const windChill = document.querySelector('.weather #wind-chill > span')
     icon.setAttribute(
       "src",
-      `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`
+      `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}.png`
     );
 
     // console.log(windChill(data["wind"]["speed"], data["main"]["temp"]));
