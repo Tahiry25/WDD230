@@ -228,16 +228,20 @@ function injectWeather(data) {
     temp.textContent = `${Math.round(data["main"]["temp"], 1)}° F`;
     condition.textContent = data["weather"][0]["description"];
     windSpeed.textContent = Math.round(data["wind"]["speed"], 1);
-    windChill.textContent = Math.round(
-      windChillCalculator(data["wind"]["speed"], data["main"]["temp"]),
-      1
+    windChill.textContent = windChillCalc(
+      data["wind"]["speed"],
+      data["main"]["temp"]
     );
   }
 }
 
 // calculate windchill
 
-function windChillCalculator(speed, temp) {
-  const windChill = temp - (speed * 0.7)
-  return windChill
+function windChillCalc(wind, temp) {
+  chill = 0.0817 * (3.71 * Math.pow(wind, 0.5) + 5.81 - 0.25 * wind) * (temp - 91.4) + 91.4;
+  if (wind <= 3) {
+    return "N/A"
+  } else {
+    return `${Math.round(chill, 1)}° F`;
+  }
 }
