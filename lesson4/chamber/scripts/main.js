@@ -237,10 +237,16 @@ function injectWeather(data) {
 
 // calculate windchill
 
+
 function windChillCalc(wind, temp) {
-  chill = 0.0817 * (3.71 * Math.pow(wind, 0.5) + 5.81 - 0.25 * wind) * (temp - 91.4) + 91.4;
+  const chill =
+    0.6215 * temp +
+    35.74 -
+    35.75 * Math.pow(wind, 0.16) +
+    0.4275 * temp * Math.pow(wind, 0.16);
+
   if (wind <= 3) {
-    return "N/A"
+    return "N/A";
   } else {
     return `${Math.round(chill, 1)}° F`;
   }
