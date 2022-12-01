@@ -13,7 +13,6 @@ document.getElementById("current").innerHTML = date;
 
 // Lazy loading
 const images = document.querySelectorAll("[data-src]");
-console.log(images);
 
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
