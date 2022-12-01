@@ -29,8 +29,6 @@ function injectWeather(data) {
       `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}.png`
     );
 
-    // console.log(windChill(data["wind"]["speed"], data["main"]["temp"]));
-
     temp.textContent = `${Math.round(data["main"]["temp"], 1)}° F`;
     condition.textContent = data["weather"][0]["description"];
     windSpeed.textContent = Math.round(data["wind"]["speed"], 1);

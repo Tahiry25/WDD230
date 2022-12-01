@@ -7,11 +7,30 @@ fetch(directory)
     return list;
   })
   .then((list) => {
-      spotlightParent = document.querySelector('.spotlight')
-      pickRandom(list)
+    for (i = 1; i <= 3; i++){
+      pickRandom(list);
+    }
   });
 
 function pickRandom(arr) {
-    console.log(Math.floor(Math.random() * arr.length))
-
+  let spotlightParent = document.querySelector(".spotlight");
+  let random = Math.floor(Math.random() * arr.length)
+  let container = document.createElement('div')
+  // company name
+  let company = document.createElement('h3')
+  company.textContent = arr[random]['name']
+  // company logo
+  let logo = document.createElement("img")
+  logo.setAttribute("src", arr[random]["logo"]);
+  // company address
+  let address = document.createElement('p')
+  // company phone
+  let phone = document.createElement("p");
+  phone.textContent = arr[random]["phone"];
+  address.textContent = arr[random]['address']
+  container.appendChild(company)
+  container.appendChild(logo)
+  container.appendChild(address)
+  container.appendChild(phone)
+  spotlightParent.appendChild(container)
 }
