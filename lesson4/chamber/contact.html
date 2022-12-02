@@ -60,7 +60,7 @@
         <h1>CONTACT US</h1>
     </div>
 
-    <form action="./thankyou.html">
+    <form action="./thankyou.html" name="contact">
         <main class="join_container flex space-between">
             <!-- section 1 -->
             <div class="w-full">
@@ -80,7 +80,9 @@
                         <label for="email">Email:
                             <div>
                                 <input class="w-full input_style" type="text" id="email" name="email"
-                                    placeholder="email@me.io" required>
+                                    placeholder="email@me.io"
+                                    pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                                    required>
                             </div>
                         </label>
 
@@ -104,8 +106,20 @@
             <input class="btn" type="submit" value="SUBMIT">
         </div>
         <div class="two_column join_container">
-            <div>1</div>
-            <div>2</div>
+            <div class="p-2">
+                <h2>SARATOGA SPRINGS CHAMBER OF COMMERCE</h2>
+                <hr>
+                <p>You can also send us a mail or give us a call for any questions or concerns you may have.</p>
+                <ul>
+                    <li>1307 Commerce Dr Suite 140, Saratoga Springs, UT 84045</li>
+                    <li>(123) 123-1234</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="p-2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0185094236285!2d-111.91525688355719!3d40.38628237936879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7e5123b64b5f%3A0xe3d93d1c8f57c038!2sSaratoga%20Springs%20Public%20Library!5e0!3m2!1sen!2sus!4v1669961622973!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
     </form>
 
@@ -141,6 +155,7 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/validation.js"></script>
 </body>
 
 </html>
