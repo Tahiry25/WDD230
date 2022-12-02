@@ -28,6 +28,7 @@ function injectWeather(data) {
       "src",
       `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}.png`
     );
+    icon.setAttribute("alt", `${data["weather"][0]['description']}`);
 
     temp.textContent = `${Math.round(data["main"]["temp"], 1)}° F`;
     condition.textContent = data["weather"][0]["description"];
