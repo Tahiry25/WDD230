@@ -20,7 +20,7 @@ apiFetch();
 function injectWeather(data) {
   if (path.endsWith("chamber/")) {
     const icon = document.querySelector(".weather > div > img");
-    const temp = document.querySelector(".weather > div > p");
+    const temp = document.querySelector(".weather > div > h3");
     const condition = document.querySelector(".weather #condition");
     const windSpeed = document.querySelector(".weather #wind-speed >span");
     const windChill = document.querySelector(".weather #wind-chill > span");
