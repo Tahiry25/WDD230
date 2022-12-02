@@ -22,6 +22,7 @@ function pickRandom(arr) {
   // company logo
   let logo = document.createElement("img")
   logo.setAttribute("src", arr[random]["logo"]);
+  logo.setAttribute("alt", arr[random]["name"]);
   // company address
   let address = document.createElement('p')
   // company phone
