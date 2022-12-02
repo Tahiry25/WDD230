@@ -122,7 +122,7 @@ function addTiles(array) {
     image.setAttribute("src", list["logo"]);
     image.setAttribute(
       "alt",
-      `${list["name"]}'s logo`
+      `${list["name"]}`
     );
     node.appendChild(image);
 
@@ -150,7 +150,7 @@ function addList(array) {
     // image
     let image = document.createElement("img");
     image.setAttribute("src", list["logo"]);
-    image.setAttribute("alt", `${list["name"]}'s logo`);
+    image.setAttribute("alt", `${list["name"]}`);
     image.setAttribute("width", "150");
     node.appendChild(image);
 
