@@ -7,6 +7,7 @@ html, body {
     font-family: 'Comfortaa', cursive;
     width: 100%;
     margin: 0;
+    color: #2B3856;
 }
 
 /* utility properties */
@@ -16,6 +17,8 @@ html, body {
     width: 100%;
 }
 
+.open { display: block; }
+
 /* custom properties */
 .header {
     display: flex;
@@ -24,11 +27,39 @@ html, body {
     gap: 1rem;
     background-color: #B7F5B4;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
-.logo, .hamburger_menu {
+.logo, .hamburgerBtn {
     max-width: 60px;
 }
 
-.hamburger_menu { opacity: 40%; }
-.hamburger_menu:hover { cursor: pointer; }
+.hamburgerBtn { opacity: 40%; }
+.hamburgerBtn:hover { cursor: pointer; }
+
+nav { display: none; }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    font-weight: 700;
+    display: block;
+    min-width: 10rem;
+    padding: 1rem .5rem;
+    color: #2B3856;
+    text-decoration: none;
+    background-color: #FEFDC2;
+    border-radius: .5rem;
+}
+
+nav ul li a:hover {
+    background-color: #F9B7C1;
+    transition: 500ms;
+}
