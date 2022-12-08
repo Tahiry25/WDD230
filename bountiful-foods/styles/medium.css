@@ -20,4 +20,50 @@
         max-width: 400px;
         margin: 0 1rem 0 auto;
     }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        max-width: 1920px;
+        justify-content: stretch;
+        margin: auto;
+    }
+
+    .intro div {
+        width: 100%;
+    }
+
+    .intro .hero {
+        height: 100%;
+    }
+
+    .discovery {
+        display:block;
+        max-width: 40rem;
+        margin: 2rem auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .catalog {
+        padding: 1rem;
+        max-width: 1920px;
+        margin: 2rem auto;
+    }
+
+    .catalog_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .areaInfo {
+        display: flex;
+        gap: 1rem;
+        max-width: 1920px;
+        margin:auto;
+        align-items: center;
+    }
+
+    .areaInfo div {
+        padding: 1rem;
+    }
 }
