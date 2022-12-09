@@ -157,3 +157,47 @@ nav ul li a:hover {
     object-fit: cover;
     width: 100%;
 }
+
+.weather_container {
+    width: 100%;
+    max-width: 50rem;
+    margin: 2rem auto;
+    background-image: url(../images/carlsbad.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.weather_container h3 {
+    font-size: 2rem;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+.weather_container .weather_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.weather_container .weather_info #currentTemp, .weather_container .weather_info #currentHumidity {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.weather_container .weather_info #weatherCondition {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.three_day_forecast {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
