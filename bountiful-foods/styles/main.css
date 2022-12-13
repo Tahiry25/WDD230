@@ -201,3 +201,65 @@ nav ul li a:hover {
     justify-content: space-evenly;
     font-weight: bold;
 }
+
+.drink_submitted {
+    background-color: #E6E6FB;
+    max-width: 20rem;
+    padding: .5rem 1rem;
+    margin: auto;
+    border-radius: 1rem;
+    border: 1px solid #FEFDC2;
+}
+
+.drink_submitted p:nth-child(2) {
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #7FC1F0;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer .logo {
+    max-width: 5rem;
+    margin: 0 auto 1rem auto;
+}
+
+footer .logo img {
+    width: 100%;
+}
+
+footer .city {
+    white-space: nowrap;
+}
+
+footer address p::before {
+    content: "📧 ";
+}
+footer address a {
+    text-decoration: none;
+    color:#2B3856;
+}
+footer address a::before {
+    content: "📞 ";
+}
+
+footer .social_btn {
+    max-width: 10rem;
+    position: relative;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+footer .social_btn div {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+}
