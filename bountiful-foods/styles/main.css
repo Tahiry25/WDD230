@@ -268,11 +268,60 @@ footer .social_btn div {
 
 main .fresh_hero {
     min-height: 25rem;
+    height: 100%;
     background-image: url(../images/splash_bg.jpeg);
-    background-color: lightblue;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+main.fresh div:nth-child(2) {
+    padding: 4rem 2rem;
+}
+
+.fresh table {
+    width: 100%;
+}
+
+.fresh table tr td {
+    padding: .2rem 0;
+}
+
+.fresh table tr td input{
+    padding: .3rem;
+    border: none;
+    border-bottom: 1px solid #7FC1F0;
+    width: 100%;
+}
+
+.fresh p {
+    margin: 2rem .5rem;
+}
+
+.fresh #selectContainer {
+    margin : 2rem .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.fresh #selectContainer select {
+    display: block;
+    padding: .3rem;
+    border: .5px solid #7FC1F0;
+    border-radius: 1rem;
+}
+
+.fresh #instruction {
+    width: 100%;
+    min-height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.fresh #instruction textarea {
+    border: .5px solid #7FC1F0;
+    border-radius: 1rem;
 }
 
 #drinkBuilder {
@@ -284,7 +333,7 @@ main .fresh_hero {
     margin: 1rem auto;
 }
 
-#orderConfirmation {
+.orderConfirmation {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -304,4 +353,9 @@ main .fresh_hero {
 }
 #orderConfirmation img {
     max-width: 10rem;
+}
+
+.visible {
+    display: flex;
+    padding: 0;
 }
