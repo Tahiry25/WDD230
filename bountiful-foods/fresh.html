@@ -40,38 +40,37 @@
         <div class="fresh_hero">
         </div>
         <div>
-            <form>
-                <div id="drinkBuilder">
-                    <table>
-                        <tr>
-                            <td><label>First Name:</label></td>
-                            <td><input type="text" id="fname" name="fname"></td>
-                        </tr>
-                        <tr>
-                            <td><label>email:</label></td>
-                            <td><input type="text" id="email" name="email"></td>
-                        </tr>
-                        <tr>
-                            <td><label>Tel:</label></td>
-                            <td><input type="text" id="tel" name="tel"></td>
-                        </tr>
-                    </table>
-                </div>
-                <p>Add up to 3 kinds of fruit to your drink.</p>
-                <div id="selectContainer">
-                    <select name="fruit1" id="fruit1">
-                    </select>
-                    <select name="fruit2" id="fruit2">
-                    </select>
-                    <select name="fruit3" id="fruit3">
-                    </select>
-                </div>
-                <div id="instruction">
-                    <label>Note / Special Instructions:</label><br>
-                    <textarea name="instructions" id="instruction"></textarea>
-                </div>
-                <input type="submit" value="Submit">
-            </form>
+            <div id="drinkBuilder">
+                <table>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td><input type="text" id="fname" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td><label>email:</label></td>
+                        <td><input type="text" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tel:</label></td>
+                        <td><input type="text" id="tel" name="tel"></td>
+                    </tr>
+                </table>
+            </div>
+            <p>Add up to 3 kinds of fruit to your drink.</p>
+            <div id="selectContainer">
+                <select name="fruit1" id="fruit1">
+                </select>
+                <select name="fruit2" id="fruit2">
+                </select>
+                <select name="fruit3" id="fruit3">
+                </select>
+            </div>
+            <div id="instruction">
+                <label>Note / Special Instructions:</label><br>
+                <textarea name="instructions" id="instruction"></textarea>
+            </div>
+
+            <button id="submitBtn">Submit</button>
         </div>
         <div class="orderConfirmation">
             <img src="./images/checked.png" alt="Checked">
@@ -79,10 +78,56 @@
             <h4>Your order has been received.</h4>
             <p>We will notify you when your drink is ready :)</p>
             <h4>YOUR ORDER SUMMARY:</h4>
-            <p>Name: <span id="name">Tahiry</span></p>
-            <p>Name: <span id="email">Tahiry</span></p>
-            <p>Name: <span id="phone">Tahiry</span></p>
-            <p>Name: <span id="instruction">Tahiry</span></p>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td class="fname">Tahiry</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td class="email">test@test.com</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td class="phone">123 123 1234</td>
+                </tr>
+                <tr>
+                    <td>Fruit Selected:</td>
+                    <td class="fruitList">Apple, Orange, Guava</td>
+                </tr>
+                <tr>
+                    <td>Special Notes</td>
+                    <td class="note">Add extra apple juice</td>
+                </tr>
+                <tr>
+                    <td>Order Date</td>
+                    <td class="date">Add extra apple juice</td>
+                </tr>
+            </table>
+            <h4>NUTRITIONAL VALUE</h4>
+            <table>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td class="carbs"></td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td class="protein"></td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td class="fat"></td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td class="sugar"></td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td class="calories"></td>
+                </tr>
+            </table>
+            <a href="./">Return to Homepage</a>
         </div>
     </main>
 

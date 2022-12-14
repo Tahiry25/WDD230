@@ -9,7 +9,8 @@ async function apiFetch() {
     const response = await fetch(fruits);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      sessionStorage.setItem("fruits", JSON.stringify(data));
+      console.log(data)
       data.forEach((fruit) => {
         addOption(fruit.name, select1);
         addOption(fruit.name, select2);
@@ -30,3 +31,142 @@ function addOption(fruitName, container) {
   option.textContent = fruitName;
   container.appendChild(option);
 }
+
+// listen to submit btn click
+const submitBtn = document.querySelector('#submitBtn')
+
+// get all input values
+function allValues() {
+  const inputValues = getValues("#drinkBuilder input");
+  const selectValues = getValues("#selectContainer select");
+  sessionStorage.setItem('selectedFruit', JSON.stringify(selectValues))
+  const instruction = document.querySelector('#instruction textarea').value;
+  return [inputValues, selectValues, instruction];
+}
+
+function getValues(elements) {
+  const elmts = document.querySelectorAll(elements);
+  const values = Array.from(elmts).reduce(
+    (acc, input) => ({ ...acc, [input.id]: input.value }),
+    {}
+  );
+  return values
+}
+
+function updateConfPage() {
+  const currentDate = new Date();
+  const element = document.querySelector(".orderConfirmation");
+  const customerInputs = allValues();
+  console.log(customerInputs)
+  document.querySelector('.orderConfirmation .fname').textContent = customerInputs[0].fname;
+  document.querySelector(".orderConfirmation .email").textContent = customerInputs[0].email;
+  document.querySelector('.orderConfirmation .phone').textContent = customerInputs[0].tel;
+
+  const fruits = `${customerInputs[1].fruit1}, ${customerInputs[1].fruit2}, ${customerInputs[1].fruit3}`;
+  document.querySelector(".orderConfirmation .fruitList").textContent = fruits;
+
+  document.querySelector(".orderConfirmation .note").textContent = customerInputs[2];
+  document.querySelector(
+    ".orderConfirmation .date"
+  ).textContent = `${currentDate.toLocaleString()}`;
+  totalCarb();
+  totalProtein();
+  totalFat();
+  totalSugar();
+  totalCalories()
+  element.classList.add("visible");
+
+  if (localStorage.submittedOrder) {
+    amount = localStorage.submittedOrder
+    localStorage.setItem('submittedOrder', parseInt(amount) + 1)
+  } else { localStorage.setItem("submittedOrder", 1); }
+}
+
+function totalCarb() {
+  const data = JSON.parse(sessionStorage.selectedFruit)
+  fruitarray = []
+  total = 0
+  for ([key, value] of Object.entries(data)) {
+    fruitarray.push(value)
+  }
+
+  allFruits = JSON.parse(sessionStorage.fruits)
+
+  fruitarray.forEach((fruit) => {
+    a = allFruits.find(({ name }) => name === fruit)
+    total += a.nutritions.carbohydrates;
+  })
+  document.querySelector(".orderConfirmation .carbs").textContent = total;
+}
+
+function totalProtein() {
+  const data = JSON.parse(sessionStorage.selectedFruit);
+  fruitarray = [];
+  total = 0;
+  for ([key, value] of Object.entries(data)) {
+    fruitarray.push(value);
+  }
+
+  allFruits = JSON.parse(sessionStorage.fruits);
+
+  fruitarray.forEach((fruit) => {
+    a = allFruits.find(({ name }) => name === fruit);
+    total += a.nutritions.protein;
+  });
+  document.querySelector(".orderConfirmation .protein").textContent = total;
+}
+
+function totalFat() {
+  const data = JSON.parse(sessionStorage.selectedFruit);
+  fruitarray = [];
+  total = 0;
+  for ([key, value] of Object.entries(data)) {
+    fruitarray.push(value);
+  }
+
+  allFruits = JSON.parse(sessionStorage.fruits);
+
+  fruitarray.forEach((fruit) => {
+    a = allFruits.find(({ name }) => name === fruit);
+    total += a.nutritions.fat;
+  });
+  document.querySelector(".orderConfirmation .fat").textContent = total;
+}
+
+function totalSugar() {
+  const data = JSON.parse(sessionStorage.selectedFruit);
+  fruitarray = [];
+  total = 0;
+  for ([key, value] of Object.entries(data)) {
+    fruitarray.push(value);
+  }
+
+  allFruits = JSON.parse(sessionStorage.fruits);
+
+  fruitarray.forEach((fruit) => {
+    a = allFruits.find(({ name }) => name === fruit);
+    total += a.nutritions.sugar;
+  });
+  document.querySelector(".orderConfirmation .sugar").textContent = total;
+}
+
+function totalCalories() {
+  const data = JSON.parse(sessionStorage.selectedFruit);
+  fruitarray = [];
+  total = 0;
+  for ([key, value] of Object.entries(data)) {
+    fruitarray.push(value);
+  }
+
+  allFruits = JSON.parse(sessionStorage.fruits);
+
+  fruitarray.forEach((fruit) => {
+    a = allFruits.find(({ name }) => name === fruit);
+    total += a.nutritions.calories;
+  });
+  document.querySelector(".orderConfirmation .calories").textContent = total;
+}
+
+submitBtn.onclick = function () {
+  console.log(updateConfPage());
+};
