@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./">
+                <img class="w-full" src="./images/bountiful-food-logo.png" alt="Bountiful Foods Logo">
+            </a>
+        </div>
+        <p class="righteous_font font-lg m-0"><strong>Bountiful Foods</strong></p>
+        <div class="hamburgerBtn">
+            <img class="w-full" src="./images/hamburger-menu.png" alt="Hamburger Menu">
+        </div>
+        <nav class="w-full">
+            <ul id="primaryNav">
+                <li><a href="#">FRESH</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="fresh">
+        <div class="fresh_hero">
+        </div>
+        <div>
+            <form>
+                <div id="drinkBuilder">
+                    <table>
+                        <tr>
+                            <td><label>First Name:</label></td>
+                            <td><input type="text" id="fname" name="fname"></td>
+                        </tr>
+                        <tr>
+                            <td><label>email:</label></td>
+                            <td><input type="text" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Tel:</label></td>
+                            <td><input type="text" id="tel" name="tel"></td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Add up to 3 kinds of fruit to your drink.</p>
+                <div>
+                    <select name="fruit1" id="fruit1">
+                    </select>
+                    <select name="fruit2" id="fruit2">
+                    </select>
+                    <select name="fruit3" id="fruit3">
+                    </select>
+                </div>
+                <div>
+                    <label>Note / Special Instructions:</label><br>
+                    <textarea name="instructions" id="instruction"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="orderConfirmation">
+                <img src="./images/checked.png" alt="Checked">
+                <h3>THANK YOU!</h3>
+                <h4>Your order has been received.</h4>
+                <p>We will notify you when your drink is ready :)</p>
+                <h4>YOUR ORDER SUMMARY:</h4>
+                <p>Name: <span id="name">Tahiry</span></p>
+                <p>Name: <span id="email">Tahiry</span></p>
+                <p>Name: <span id="phone">Tahiry</span></p>
+                <p>Name: <span id="instruction">Tahiry</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img src="./images/bountiful-food-logo.png" alt="Bountiful Foods">
+        </div>
+        <p class="righteous_font font-lg m-0"><strong>Bountiful Foods</strong></p>
+        <address>
+            <p>6204 Liberty Pl Carlsbad, <span class="city">California(CA), 92009</span></p>
+            <a href="tel:+18584569112">(858) 456-9112</a>
+        </address>
+        <div class="social_btn">
+            <div><img src="./images/socials/instagram.svg" alt="Instagram"></div>
+            <div><img src="./images/socials/fb.svg" alt="Facebook"></div>
+            <div><img src="./images/socials/pinterest.svg" alt="Pinterest"></div>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/juicebuilder.js"></script>
+</body>
+
+</html>

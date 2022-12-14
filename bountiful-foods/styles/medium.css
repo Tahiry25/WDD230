@@ -66,4 +66,30 @@
     .areaInfo div {
         padding: 1rem;
     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer > * {
+        width: 100%;
+    }
+
+    /* fresh page */
+    .fresh {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        max-width: 80rem;
+        margin: 2rem auto;
+        background-color: #F9B7C1;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .fresh div {
+        width: 100%;
+    }
 }
