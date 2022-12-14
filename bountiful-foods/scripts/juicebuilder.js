@@ -80,6 +80,7 @@ function updateConfPage() {
     amount = localStorage.submittedOrder
     localStorage.setItem('submittedOrder', parseInt(amount) + 1)
   } else { localStorage.setItem("submittedOrder", 1); }
+  document.querySelector('.fresh #submitBtn').remove();
 }
 
 function totalCarb() {
@@ -96,7 +97,7 @@ function totalCarb() {
     a = allFruits.find(({ name }) => name === fruit)
     total += a.nutritions.carbohydrates;
   })
-  document.querySelector(".orderConfirmation .carbs").textContent = total;
+  document.querySelector(".orderConfirmation .carbs").textContent = total + ' g';
 }
 
 function totalProtein() {
@@ -113,7 +114,8 @@ function totalProtein() {
     a = allFruits.find(({ name }) => name === fruit);
     total += a.nutritions.protein;
   });
-  document.querySelector(".orderConfirmation .protein").textContent = total;
+  document.querySelector(".orderConfirmation .protein").textContent =
+    Math.round(total * 100) / 100 + " g";
 }
 
 function totalFat() {
@@ -130,7 +132,8 @@ function totalFat() {
     a = allFruits.find(({ name }) => name === fruit);
     total += a.nutritions.fat;
   });
-  document.querySelector(".orderConfirmation .fat").textContent = total;
+  document.querySelector(".orderConfirmation .fat").textContent =
+    Math.round(total * 100) / 100 + " g";
 }
 
 function totalSugar() {
@@ -147,7 +150,8 @@ function totalSugar() {
     a = allFruits.find(({ name }) => name === fruit);
     total += a.nutritions.sugar;
   });
-  document.querySelector(".orderConfirmation .sugar").textContent = total;
+  document.querySelector(".orderConfirmation .sugar").textContent =
+    Math.round(total * 100) / 100 + " g";
 }
 
 function totalCalories() {
@@ -164,7 +168,7 @@ function totalCalories() {
     a = allFruits.find(({ name }) => name === fruit);
     total += a.nutritions.calories;
   });
-  document.querySelector(".orderConfirmation .calories").textContent = total;
+  document.querySelector(".orderConfirmation .calories").textContent = total + ' cals';
 }
 
 submitBtn.onclick = function () {
