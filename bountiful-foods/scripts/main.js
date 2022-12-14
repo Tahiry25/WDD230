@@ -17,3 +17,8 @@ if (
         container.textContent = localStorage.submittedOrder
     }
 }
+
+const lastMod = new Date(document.lastModified);
+document.querySelector(
+  "footer #last_modified"
+).textContent = `Last modified: ${lastMod.toLocaleString()}`;

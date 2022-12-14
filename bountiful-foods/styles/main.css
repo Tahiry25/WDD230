@@ -219,6 +219,7 @@ nav ul li a:hover {
 }
 
 footer {
+    position: relative;
     background-color: #7FC1F0;
     padding: 2rem 1rem;
     text-align: center;
@@ -371,4 +372,11 @@ main.fresh div:nth-child(2) {
 
 .visible {
     display: flex;
+}
+
+footer #last_modified {
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
