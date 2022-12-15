@@ -40,37 +40,39 @@
         <div class="fresh_hero">
         </div>
         <div>
-            <div id="drinkBuilder">
-                <table>
-                    <tr>
-                        <td><label>First Name:</label></td>
-                        <td><input type="text" id="fname" name="fname"></td>
-                    </tr>
-                    <tr>
-                        <td><label>email:</label></td>
-                        <td><input type="text" id="email" name="email"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Tel:</label></td>
-                        <td><input type="text" id="tel" name="tel"></td>
-                    </tr>
-                </table>
-            </div>
-            <p>Add up to 3 kinds of fruit to your drink.</p>
-            <div id="selectContainer">
-                <select name="fruit1" id="fruit1">
-                </select>
-                <select name="fruit2" id="fruit2">
-                </select>
-                <select name="fruit3" id="fruit3">
-                </select>
-            </div>
-            <div id="instruction">
-                <label>Note / Special Instructions:</label><br>
-                <textarea name="instructions" id="instruction"></textarea>
-            </div>
+            <form id="form" onsubmit="updateConfPage()">
+                <div id="drinkBuilder">
+                    <table>
+                        <tr>
+                            <td><label>First Name <small><i>(required)</i></small>:</label></td>
+                            <td><input type="text" id="fname" name="fname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>email <small><i>(required)</i></small>:</label></td>
+                            <td><input type="text" id="email" name="email" pattern="^[\w\s-]{7,}$" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Tel <small><i>(required)</i></small>:</label></td>
+                            <td><input type="text" id="tel" name="tel" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Choose up to 3 kinds of fruit to your drink.</p>
+                <div id="selectContainer">
+                    <select name="fruit1" id="fruit1">
+                    </select>
+                    <select name="fruit2" id="fruit2">
+                    </select>
+                    <select name="fruit3" id="fruit3">
+                    </select>
+                </div>
+                <div id="instruction">
+                    <label>Note / Special Instructions:</label><br>
+                    <textarea name="instructions" id="instruction"></textarea>
+                </div>
 
-            <button id="submitBtn">Submit</button>
+                <input type="submit" id="submitBtn"></input>
+            </form>
         </div>
         <div class="orderConfirmation">
             <img src="./images/checked.png" alt="Checked">

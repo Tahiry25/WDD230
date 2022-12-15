@@ -10,7 +10,6 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       sessionStorage.setItem("fruits", JSON.stringify(data));
-      console.log(data)
       data.forEach((fruit) => {
         addOption(fruit.name, select1);
         addOption(fruit.name, select2);
@@ -171,6 +170,13 @@ function totalCalories() {
   document.querySelector(".orderConfirmation .calories").textContent = total + ' cals';
 }
 
-submitBtn.onclick = function () {
-  console.log(updateConfPage());
-};
+// submitBtn.onclick = function () {
+//   console.log(updateConfPage());
+// };
+
+const form = document.querySelector(".fresh #form");
+console.log(form);
+function handleForm(event) {
+  event.preventDefault();
+}
+form.addEventListener("submit", handleForm);

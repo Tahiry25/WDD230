@@ -218,6 +218,12 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+.fresh input[type='submit'] {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+
 footer {
     position: relative;
     background-color: #7FC1F0;
